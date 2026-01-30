@@ -1,0 +1,199 @@
+/*coinGame*/
+.game-container {
+    transition-duration: 1s;
+    height: 7rem;
+    width: 20rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.coinGame__title {
+    margin: .5rem;
+    font-family: var(--font-headings);
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    animation: title 4s infinite;
+    margin-bottom: 0;
+}
+
+@keyframes title {
+  0%   {color: #9e4d73;}
+  25%  {color: #d4e769;}
+  50% {color: #69e77e;}
+  75%  {color: #69bfe7;}
+  100%  {color: #9e4d73;}
+}
+
+.coinGame__result {
+    animation: result 1s;
+}
+
+@keyframes result {
+    from   {font-size: 0%;}
+    to  {font-size: 100%;}
+  }
+
+.coinGame__paragraph {
+    color: var(--clr-main);
+    text-align: center;
+    font-family: var(--font-paragraph);
+    margin-top: 0;
+}
+
+.coinGame__betting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: .5rem auto;
+    justify-content: center;
+}
+
+.label__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.label__background {
+    background-color: var(--clr-darkbg);
+    width: 10rem;
+    margin-top: 2px;
+    height: .4rem;
+    border-radius: 7px;
+    align-self: center;
+    grid-area: 1 / 1 / -1 / -1;
+    margin: 2px auto 0 auto;
+}
+
+.label__background.wider {
+    width: 20rem;
+}
+
+.coinGame__label {
+    font-family: var(--font-paragraph);
+    font-weight: 700;
+    letter-spacing: .3ch;
+    text-transform: uppercase;
+    font-size: .8rem;
+    grid-area: 1/1/-1/-1;
+    color: white;
+    margin: 0 auto;
+}
+
+.coinGame__selector {
+    background-color: #606070;
+    border: none;
+    border-top-left-radius: 1rem;
+    font-family: var(--font-paragraph);
+    padding-right: .5rem;
+}
+
+.coinGame__placeholder {
+    padding-right: .5rem
+}
+
+.option.hovered {
+    background-color: #411212;
+}
+
+.coinGame__price {
+    border-top-right-radius: 1rem;
+    font-family: var(--font-paragraph);
+    padding-right: 13px;
+}
+
+.coinGame__price .input-group-btn-vertical::before {
+    content: "%";
+    position: absolute;
+    right: 18px;
+    top: 7px;
+}
+
+.error-svg {
+    color: var(--clr-bad);
+    width: 1.5rem;
+    position: absolute;
+    margin-left: 18.3rem;
+    top: 9.1rem;
+}
+
+.warning-message {
+    font-size: .7rem;
+    color: var(--clr-bad);
+    position: absolute;
+    margin-left: 20.3rem;
+    top: 8.4rem;
+}
+
+.betting__btn {
+    grid-column: 1 / 3;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+}
+
+.reset-button {
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 32.5px;
+    margin-top: .4px;
+}
+
+.toggled-element {
+    height: 0;
+    opacity: 0;
+}
+
+.result-container {
+    transition-duration: 1s;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.result-container h2 {
+    margin-right: -1rem;
+}
+
+.element-displayer {
+    opacity: 0;
+}
+
+h2 {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .5rem .5rem .5rem 1rem;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: hsl(290, 22%, 35%);
+    color: var(--clr-darkbg);
+    margin: 0;
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+  
+h2 {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+h2 {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}

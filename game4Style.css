@@ -1,0 +1,174 @@
+.TicTacToe h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.h1-title-word1 {
+    animation: firstWord 4s infinite;
+}
+
+@keyframes firstWord {
+    0%   {color: #69e77e;}
+    24%   {color: #69e77e;}
+    25%  {color: #69bfe7;}
+    49%  {color: #69bfe7;}
+    50% {color: #9e4d73;}
+    74% {color: #9e4d73;}
+    75%  {color: #d4e769;}
+    100%  {color: #d4e769;}
+}
+
+.h1-title-word2 {
+    animation: secondWord 4s infinite;
+}
+
+@keyframes secondWord {
+    0%   {color: #69bfe7;}
+    24%   {color: #69bfe7;}
+    25%  {color: #9e4d73;}
+    49%  {color: #9e4d73;}
+    50% {color: #d4e769;}
+    74% {color: #d4e769;}
+    75%  {color: #69e77e;}
+    100%  {color: #69e77e;}
+}
+
+.h1-title-word3 {
+    animation: thirdWord 4s infinite;
+}
+
+@keyframes thirdWord {
+    0%   {color: #d4e769;}
+    24%   {color: #d4e769;}
+    25%  {color: #69e77e;}
+    49%  {color: #69e77e;}
+    50% {color: #69bfe7;}
+    74% {color: #69bfe7;}
+    75%  {color: #9e4d73;}
+    100%  {color: #9e4d73;}
+}
+
+.btn img,
+.winning-player img {
+    padding: .2rem 0 0 0;
+    width: 1rem;
+}
+
+.menu-elements {
+    height: 3rem;
+    transition-duration: 1s;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-paragraph {
+    margin: 0;
+    color: var(--clr-text);
+    text-align: center;
+    height: 3rem;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.one-player-display {
+    height: 8rem;
+    transition-duration: 1s;
+    overflow: hidden;
+    display: grid;
+}
+
+.one-player-display h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--clr-darkbg);
+}
+
+.one-player-display button {
+    margin: .1rem 6rem;
+    border-radius: 1rem;
+
+}
+
+.one-player-result {
+    margin: 0;
+    text-align: center;
+    height: 7rem;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.one-player-result h3 {
+    color: var(--clr-text);
+    margin: 0 3rem;
+}
+
+.one-player-result button {
+    margin: 1rem;
+    border-radius: .5rem;
+    width: 10rem;
+}
+
+.two-player-result {
+    text-align: center;
+    height: 10rem;
+    transition-duration: 1s;
+    overflow: hidden;
+    margin: 0;
+}
+
+.two-player-result h3 {
+    color: var(--clr-text);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.two-player-result button {
+    border-radius: .5rem;
+    margin: .5rem;
+    width: 15rem;
+}
+
+.game-body {
+    height: 10rem;
+    transition-duration: 1s;
+    overflow: hidden;
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    grid-template-rows: repeat(3, 3rem);
+    justify-content: center;
+}
+
+.game-slot {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--clr-main);
+    background-color: hsla(290, 22%, 48%, 0.217);
+}
+
+.cross-show {
+    background-image: url(crossSVG.svg);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle-show {
+    background-image: url(circleSVG.svg);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle-down {
+    height: 0;
+    transition-duration: 1s;
+}
+
+.circle-image {
+    background-color: var(--clr-text);
+}

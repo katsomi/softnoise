@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="game1Body">
+        <main class="game1Container">
+            <section class="navigation-bar">
+                <h1 class="nav-title"><a href="index.html">main page</a></h1>
+                <ul class="showed-menu">
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="index.html">games</a></li>
+                    <li><a href="index.html">disclaimer</a></li>
+                    <li><a href="index.html">contact</a></li>
+                </ul>
+            </section>
+            <div class="toggled-menu-container">
+                <ul class="toggled-menu">
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="index.html">games</a></li>
+                    <li><a href="index.html">contact</a></li>
+                </ul>
+            </div>
+            <section class="introduction">
+                <h1>The Enchanted Forest!</h1>
+                <div class="introContainer">
+                    <p class="gameInfo">
+                        Difficulty: easy<br>
+                        Genres: <a href="https://en.wikipedia.org/wiki/Isekai">Other World</a>, 
+                        <a href="https://en.wikipedia.org/wiki/Adventure">Adventure</a>, 
+                        <a href="https://en.wikipedia.org/wiki/Fantasy">Fantasy</a>.
+                    </p>
+                    <div class="buttons">
+                        <button type="button" class="btn btn__play btn-with-border">Play</button>
+                        <button type="button" class="btn btn__record btn-with-border">Record</button>
+                        <button type="reset" class="btn btn__reset btn-with-border">Reset record</button>
+                    </div>
+                </div>
+            </section>
+            <section class="gameBody">
+                <h2 class="phaseNumberTitle">You are currently in the <span class="phaseNumber">first</span> phase</h2>
+                    <p class="storyTelling typedOut"></p>
+                <div>
+                    <button type="button" class="btn selectionNumber1">undefined</button>
+                    <button type="button" class="btn selectionNumber2">undefined</button>
+                    <button type="button" class="btn selectionNumber3">undefined</button>
+                </div>
+            </section>
+            <section class="gameRecord">
+                <ul class="records"></ul>
+                <ul class="moreItemsRecorded"></ul>
+                <button type="button" class="btn backBtn">Go back</button>
+            </section>
+        </main>
+        <footer class="credit">
+            <p>This game was made as a mini project and was possibly made due to the help of many amazing people, including the following: </p><br>
+            <ul>
+                <li class="contributorNames1 contributor"><a href="http://akrambenmoumen.dpdns.org/">Akram</a> - maker</li>
+                <li class="contributorNames2 contributor"><a href="https://fireship.dev/">FireShip</a> - cards</li>
+            </ul>
+        </footer>
+        <script src="gameScript.js"></script>
+    </body>
+</html>

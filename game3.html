@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Game!</title>
+    <link rel="stylesheet" href="game3Style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navigation-bar">
+        <h1 class="nav-title"><a href="index.html">main page</a></h1>
+        <ul class="showed-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="index.html">games</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+    </section>
+    <div class="toggled-menu-container">
+        <ul class="toggled-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="index.html">games</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="coinGame">
+            <h1 class="coinGame__title title">coin game!</h1>
+            <p class="coinGame__paragraph">Put your guess, and win <span id="coinGame__nothing">nothing!</span></p>
+            <br>
+            <div class="game-container">
+                <div class="label__container"><div class="label__background"></div><label for="betting" class="coinGame__label">Choose your bet:</label></div>
+                <div class="coinGame__betting">
+                    <select name="bet" class="coinGame__selector">
+                    <option class="coinGame__option1 option" value="Head">Head</option>
+                    <option class="coinGame__option2 option" value="Tails">Tails</option>
+                    </select>
+                    <input type="text" name="price" class="coinGame__price" placeholder="Put your bet in here..">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="error-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    </svg><p class="warning-message">You must only<br>write numbers!</p>            
+                    <input class="btn betting__btn" type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="result-container">
+                <h2 class="game-result">nothing</h2>
+                <button type="reset" class="btn reset-button">Play Again</button>
+                <img src="" alt="">
+                <p class="coinGame__result title"></p>
+            </div>
+        </section>
+    </main>
+    <script src="game3script.js"></script>
+</body>
+</html>

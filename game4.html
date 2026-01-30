@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game4Style.css">
+    <script src="game4Script.js" defer></script>
+</head>
+<body>
+    <section class="navigation-bar">
+        <h1 class="nav-title"><a href="index.html">main page</a></h1>
+        <ul class="showed-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="index.html">games</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+    </section>
+    <div class="toggled-menu-container">
+      <ul class="toggled-menu">
+        <li><a href="index.html">about</a></li>
+        <li><a href="index.html">games</a></li>
+        <li><a href="index.html">contact</a></li>
+      </ul>
+    </div>
+    <main class="TicTacToe">
+        <h1><span class="h1-title-word1">Tic </span><span class="h1-title-word2">Tac </span><span class="h1-title-word3">Toe</span></h1>
+        <section class="game-menu">
+            <p class="menu-paragraph">Hello There! How is your day?<br>I hope You're ready for some TicTacToe!</p>
+            <div class="menu-elements">
+                <button type="button" class="btn two-players-button">Two Players</button>
+                <button type="button" class="btn one-player-button">One Player</button>
+                <button type="reset" class="btn reset-score-btn">reset score</button>
+            </div>
+            <div class="one-player-display toggle-down">
+                <h2>Please choose..</h2>
+                <button type="button" class="btn circle-button"><img src="circleSVG.svg" alt="circle-svg"></button>
+                <button type="button" class="btn cross-button"><img src="crossSVG.svg" alt="cross-svg"></button>
+            </div>
+        </section>
+        <section class="game-body toggle-down">
+            <div class="game-slot slot1"></div>
+            <div class="game-slot slot2"></div>
+            <div class="game-slot slot3"></div>
+            <div class="game-slot slot4"></div>
+            <div class="game-slot slot5"></div>
+            <div class="game-slot slot6"></div>
+            <div class="game-slot slot7"></div>
+            <div class="game-slot slot8"></div>
+            <div class="game-slot slot9"></div>
+        </section>
+        <section class="game-result">
+            <div class="one-player-result toggle-down">
+                <h3 class="result">Congrats!! You Have won.</h3>
+                <button type="button" class="btn play-again-button-1">Play Again</button>
+            </div>
+            <div class="two-player-result toggle-down">
+                <h3>Congrats To the <span class="winning-player"><span class="winner-number">first</span> player <span class="cross-image">(<img src="crossSVG.svg" alt="cross-svg">)</span><span class="circle-image">(<img src="circleSVG.svg" alt="circle-svg">)</span>You have won!</h3>
+                <button type="button" class="btn play-again-button-2">Play Again</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

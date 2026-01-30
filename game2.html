@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game2Body">
+    <section class="navigation-bar">
+        <h1 class="nav-title"><a href="index.html">main page</a></h1>
+        <ul class="showed-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="index.html">games</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+    </section>
+    <div class="toggled-menu-container">
+        <ul class="toggled-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="index.html">games</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="RockPaperScissors">
+            <div class="RockPaperScissors__Options">
+                <div class="titleWrapper">
+                    <h1 class="title titleContainer">
+                        <span class="Options__title Options__title1">Rock</span>
+                        <span class="Options__title Options__title2">Paper</span>
+                        <span class="Options__title Options__title3">scissors</span>
+                    </h1>
+                    <img src="rock-paper-scissors.png" alt="rock-paper-scissors-image" class="rock-paper-scissors-image">
+                </div>
+                <p class="Options__text">Please choose</p><br>
+                <div class="RockPaperScissors__result">
+                    <p class="result__text title">You haven't choosen yet..</p>
+                </div>
+                <div class="Options__btns">
+                    <button class="btns__reset btn" data-action="reset" type="button"><span>Reset</span></button>
+                    <button class="btns__rock btn" data-action="play" type="button"><span>Rock</span></button>
+                    <button class="btns__paper btn" data-action="play" type="button"><span>Paper</span></button>
+                    <button class="btns__scissors btn" data-action="play" type="button"><span>Scissors</span></button>
+                </div>
+            </div>
+            <div class="RockPaperScissors__scoreBoard">
+                <table class="scoreBoard__table">
+                    <tr class="scoreBoard__titles">
+                        <td>Wins</td>
+                        <td>Losses</td>
+                        <td>Ties</td>
+                   </tr>
+                    <tr class="scoreBoard__values">
+                        <td class="values__wins">0</td>
+                        <td class="values__losses">0</td>
+                        <td class="values__ties">0</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="game2Script.js"></script>
+</html>
